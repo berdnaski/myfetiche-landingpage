@@ -13,8 +13,6 @@ use App\Http\Controllers\RecruitmentController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/recruitment');
 
 Route::get('/recruitment', [RecruitmentController::class, 'index']);
